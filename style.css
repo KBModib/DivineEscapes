@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+   color: white;
+   background: url(./assets/images/DEA-background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+hr{
+    height: 10px;
+    background-color: whitesmoke;
+    border: transparent;
+}
+nav{
+    text-align: center;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: -400px;
+    z-index: 1000;
+    top: 0;
+
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 40px;
+
+}
+.hero-section{
+    display: flex;
+    padding: 10px;
+    height: 250px;
+    margin: 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+.hero-section img{
+    display: flex;
+    padding: 10px;
+    height: 250px;
+    margin-left: -145px;
+}
+.hero-section h1{
+    font-size: 70px;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+
+}
+.about-section{
+    margin: 0px 130px;
+    padding: 10px;
+}
+.about-section h3{
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+.about-section p{
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+.slider img{
+    width: 100%;
+    height: 450px;
+}
+.adventure-section{
+    margin: 0px 130px;
+    font-size: 25px;
+}
+.adventure-section h3{
+    margin: 20px 0px;
+    font-size: 30px;
+}
+.adventure-sec-one img{
+    width: 1000px;
+    border: 1px solid red;
+}
+.adventure-sec-one{
+    display: flex;
+    border: 1px solid green;
+}
+.adventure-sec-two{
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f";
+    /* grid-template-rows: 150px 150px 150px;
+    grid-template-columns: repeat(150px 3); */
+}
+.adventure-sec-two img{
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    margin-left: 40px;
+}
+.adventure-sec-two h4{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.adven-one{
+    grid-area: a;
+}
+.adven-two{
+    grid-area: d;
+}
+.adven-three{
+    grid-area: b;
+}
+.adven-four{
+    grid-area: e;
+}
+.adven-five{
+    grid-area: c;
+}
+.adven-six{
+    grid-area: f;
+}
+.adventure-section button{
+    width: 280px;
+    height: 50px;
+    font-size: 15px;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+    margin-left: 520px;
+    font-weight: 700;
+    word-spacing: 10%;
+}
+.enquire-btn{
+    width: 280px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 680px;
+    font-weight: 700;
+}
+.inspiration-section{
+    margin: 0px 130px;
+    margin-top: 50px;
+}
+.inspiration-section h3{
+    padding-bottom: 25px;
+}
+.quotes{
+    display: flex;
+}
+.quotes img{
+    width: 400px;
+    margin: 20px;
+}
+.contact-section{
+    margin: 0px 130px;
+}
+.contact-section img{
+    width: 1400px;
+    height: 550px;
+}
+.social-links{
+    display: flex;
+    padding: 20px;
+}
+.social-links img{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+.social-links h4{
+    color: whitesmoke;
+    margin: 12px;
+    font-size: 20px;
+}
+.contact-section h2{
+    border: 1px solid white;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    height: 100px;
+    font-size: 60px;
+    justify-content: center;
+    padding-top: 15px;
+        /* margin-left: 20px; */
+}
