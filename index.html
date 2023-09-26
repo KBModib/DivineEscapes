@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DivineEscape Adventures</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Cabin+Sketch:wght@700&family=Londrina+Sketch&family=Rampart+One&family=Tourney:wght@500&family=Train+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"></head>
 <body>
     <nav>
         <a href="#home">Home</a>
@@ -29,18 +34,43 @@
             Through immersive adventure experiences in nature, we aim to awaken a deeper connection with oneself, others, and the environment. By fostering personal growth and fostering a sense of unity, we aspire to create positive ripples that spread from individuals to organizations, schools, and beyond.
         </p>
         </div>
-        <div class="slider">
+        <!-- <div class="slider">
             <img src="/assets/images/DEA-HS1.PNG" alt="white-water-rafting">
-        </div>
+        </div> -->
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     <div class="adventure-section" id="adventures">
         <h3>DivineEscape Adventures</h3>
         <div class="adventure-sec-one">
             <img src="/assets/images/DEA-HS1.PNG" alt="white-water-rafting">
-            <p>
-                At Divine Escape, we believe that true adventure goes beyond the physical realm; it is a transformative journey that touches the very essence of our being. Rooted in the belief that every individual is a tripartite being—Spiritual, Mental, and Emotional—we have embarked on a mission to facilitate holistic growth and self-discovery through immersive nature experiences.
-    
-                Our name, "Divine Escape," encapsulates the essence of what we offer—an escape into the heart of God's creation, where participants can find solace, inspiration, and renewal. Nature has a unique way of speaking to our souls, offering a canvas upon which we can explore the depths of our spirituality, clarify our thoughts, and heal our emotions.
-            </p>
+            <div class="textbox">
+                <p>
+                    At Divine Escape, we believe that true adventure goes beyond the physical realm; it is a transformative journey that touches the very essence of our being. Rooted in the belief that every individual is a tripartite being—Spiritual, Mental, and Emotional—we have embarked on a mission to facilitate holistic growth and self-discovery through immersive nature experiences.<hr>
+        
+                    Our name, "Divine Escape," encapsulates the essence of what we offer—an escape into the heart of God's creation, where participants can find solace, inspiration, and renewal. Nature has a unique way of speaking to our souls, offering a canvas upon which we can explore the depths of our spirituality, clarify our thoughts, and heal our emotions.
+                </p>
+            </div>
+            
         </div>
         <h3>Adventure Experiences</h3>
         <p>Explore the breath-taking natural landscapes and challenge yourself and/or your team's endurance</p>
@@ -52,12 +82,13 @@
             <img src="/assets/images/DEA-a3.jpg" alt="safari" class="adven-five">
             <h4 class="adven-six">Safari</h4>
         </div>
-        <button>Enquire Upcoming Trips</button>
+        <!-- Remember to make this an onClick function & make the link go the stories -->
+        <button><a href="https://www.instagram.com/p/CvBxVklth-4/?img_index=1">Enquire Upcoming Trips</a></button>
         <h3>Teambuilding</h3>
         <p>Our team-building exercises for your teams are carefully crafted to foster better communication, cooperation, and problem-solving skills among group members.</p>
-        <img src="/assets/images/DEA-HS1.PNG" alt="team-building">
+        <img src="/assets/images/DEA2.PNG" alt="team-building" class="teambuilding-img">
     </div>
-    <button class="enquire-btn">Enquire</button>
+    <button class="enquire-btn" id="myBtn">Enquire</button>
 
     <div class="inspiration-section" id="inspiration">
         <h3>Adventure Inspirations</h3>
@@ -80,6 +111,7 @@
         </div>
         
     </div>
-    <footer></footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
