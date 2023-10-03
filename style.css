@@ -3,9 +3,9 @@
     padding: 0;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
 }
 body{
-   color: white;
    background: url(./assets/images/DEA-background.png);
    background-repeat: no-repeat;
    background-size: cover;
@@ -35,7 +35,7 @@ nav a{
 .hero-section{
     display: flex;
     padding: 10px;
-    height: 300px;
+    height: 450px;
     margin: 10px;
     justify-content: center;
     overflow: hidden;
@@ -43,29 +43,29 @@ nav a{
 .hero-section img{
     display: flex;
     padding: 10px;
-    height: 290px;
-    margin-left: -145px;
+    height: 350px;
+    width: 350px;
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .hero-section h1{
     font-size: 70px;
     text-align: center;
     padding: 20px;
     overflow: hidden;
+    margin: auto 0;
     font-family: 'Train One', cursive;
+ /* font-family: 'Cabin Sketch', cursive; */
+    /* font-family: 'Rampart One', cursive; */
 
-    /* font-family: 'Bungee Outline', cursive;
- font-family: 'Cabin Sketch', cursive;
-     font-family: 'Londrina Sketch', cursive;
-    font-family: 'Rampart One', cursive;
-    font-family: 'Tourney', cursive;
-*/
 }
 .about-section{
     margin: 0px 130px;
     padding: 10px;
 }
 .about-section h3{
-    font-size: 28px;
+    font-size: 32px;
     padding-bottom: 5px;
 }
 .about-section p{
@@ -73,16 +73,29 @@ nav a{
     text-align: left;
     padding-bottom: 5px;
 }
+.slider{
+    width: 85%;
+    height: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .slider img{
-    width: 90%;
-    height: 450px;
+    width: 100%;
+    height: 650px;
 }
 .adventure-section{
-    margin: 0px 130px;
+    margin: 50px 130px;
     font-size: 25px;
+}
+.adventure-section hr{
+    color: transparent;
 }
 .adventure-section h3{
     margin: 20px 0px;
+    font-size: 32px;
+    overflow: hidden;
+}
+.adventure-section p{
     font-size: 20px;
 }
 .adventure-sec-one img{
@@ -91,6 +104,7 @@ nav a{
 .adventure-sec-one{
     display: flex;
     width: 1340px;
+    margin: 20px 0 50px 0;
 }
 .adventure-sec-one .textbox{
     font-size: 20px;
@@ -141,26 +155,34 @@ nav a{
     grid-area: f;
 }
 .adventure-section button{
-    width: 280px;
-    height: 50px;
-    font-size: 15px;
+    width: 350px;
+    height: 55px;
+    font-size: 16px;
     justify-content: center;
     align-content: center;
     margin: 50px;
     margin-left: 520px;
     font-weight: 700;
     word-spacing: 10%;
+    border: transparent;
+
+}
+.adventure-section button a{
+    text-decoration: none;
+    color: black;
 }
 .teambuilding-img{
     width: 1440px;
     padding: 50px 0;
 }
 .enquire-btn{
-    width: 280px;
-    height: 50px;
-    font-size: 15px;
+    width: 320px;
+    height: 55px;
+    font-size: 18px;
     margin-left: 680px;
-    font-weight: 700;
+    font-weight: 600;
+    color: black;
+    border: transparent;
 }
 .inspiration-section{
     margin: 0px 130px;
@@ -177,7 +199,12 @@ nav a{
     margin: 20px;
 }
 .contact-section{
-    margin: 0px 130px;
+    margin: 50px 130px;
+    
+}
+.contact-section h3{
+    overflow: hidden;
+    padding: auto;
 }
 .contact-section img{
     width: 1400px;
@@ -196,8 +223,10 @@ nav a{
     color: whitesmoke;
     margin: 12px;
     font-size: 20px;
+    overflow: hidden;
 }
 .contact-section h2{
+    overflow: hidden;
     border: 1px solid white;
     text-align: center;
     color: black;
@@ -209,3 +238,78 @@ nav a{
         /* margin-left: 20px; */
 }
 
+footer{
+    border-top: 1px solid grey;
+    display: flex;
+    height: 80px;
+}
+footer img{
+    padding: 10px;
+    padding-left: 50px;
+}
+footer h4{
+    margin-left: auto;
+    padding: 20px;
+    font-size: 15px;
+    opacity: 80%;
+}
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.close{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 40px;
+    border-radius: 10%;
+    border: transparent;
+}
+.modal-title{
+    color: rgb(19, 15, 15);
+    font-size: 30px;
+}
+form{
+    display: list-item;
+}
+form input{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 20px;
+    color: darkslategrey;
+
+}
+form select{
+    width: 80%;
+    height: 45px;
+    padding: 10px;
+    margin: 10px 20px;
+    color: rgb(85, 90, 90);
+}
+form textarea{
+    width: 90%;
+    height: 240px;
+    padding: 10px;
+    margin: 10px 20px;
+    color: rgb(85, 90, 90);
+}
+.cancel-btn{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 680px;
+    font-weight: 600;
+    background-color: rgb(202, 7, 7);
+    border: transparent;
+    border-radius: 10px;
+}
+.submit-btn{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 680px;
+    font-weight: 600;
+    background-color: rgb(57, 111, 46);
+    border: transparent;
+    border-radius: 10px;
+}
